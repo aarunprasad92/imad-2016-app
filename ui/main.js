@@ -6,11 +6,7 @@ button.onclick = function()
 {
     //create a request
     var request = new XMLHttpRequest();
-    
-    //make request
-    request.open('GET','http://aarunprasad92.imad.hasura-app.io/counter',true);
-    request.send(null);
-    
+
     //capture the response and do something
     request.onreadystatecjange = function()
     {
@@ -24,4 +20,8 @@ button.onclick = function()
           }
       }
     };
+    
+     //make request
+    request.open('GET','http://aarunprasad92.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
