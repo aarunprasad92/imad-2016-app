@@ -27,9 +27,6 @@ button.onclick = function()
 };
 
 //submit name
-var nameInput = document.getElementById('name');
-var nameVal = nameInput.value;
-
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function()
@@ -59,6 +56,8 @@ submit.onclick = function()
     };
     
      //make request
+     var nameInput = document.getElementById('name');
+     var nameVal = nameInput.value;
     request.open('GET','http://aarunprasad92.imad.hasura-app.io/submit-name?name='+nameVal,true);
     request.send(null);
 };
