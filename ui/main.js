@@ -9,6 +9,6 @@ function moveRight(){
 }
 var img = document.getElementById('madi');
 img.onclick = function(){
-    setInterval(moveRight, 100);
+    var interval = setInterval(moveRight, 100);
     //img.style.marginLeft = '500px';
 };
